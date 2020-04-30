@@ -1,7 +1,7 @@
 #' Transform the edges list of each sample in graphml format graphs
 #'
-#' This function create a graph for each sample where metabolites are nodes and the enzymes are the edges, whose weight is given by the expression value.
-#' It simplifies the multiedges in single by taking the mean of enzyme catalyzing the same reaction and summing up those coming from different reactions.
+#' This function creates a graph for each sample where metabolites are nodes and the enzymes are the edges, whose weight is given by the expression value.
+#' It simplifies the multiedges in single ones by taking the mean of enzyme catalyzing the same reaction and summing up those coming from different reactions.
 #' @param input_dir path to input directory containing the samples edge lists
 #' @param output_dir path to output directory
 #' @return graphs in graphml format
