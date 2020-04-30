@@ -1,6 +1,6 @@
 #' Add expression values to enzymes catalyzing each reaction for each sample
 #'
-#' This function create a new file for each sample containing reactions, metabolites connected, enzymes and expression values
+#' This function creates a new file for each sample containing reactions, connected metabolites, enzymes and expression values
 #' @param df dataframe of edges list containing, reactions. metabolites and enzymes. The latter named "Enzyme"
 #' @param expr_dir path to directory containing samples expression data
 #' @param extension files extension
