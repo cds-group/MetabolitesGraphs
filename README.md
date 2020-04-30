@@ -1,10 +1,10 @@
-# Met2Graph
+# MetabolitesGraphs
 
 Code to build graphs integrating gene expression counts and a SBML metabolic model. The resulting weighted digrahps consist of nodes representing the metabolites; the edges connect substrate and product metabolites and their weights are obtained by combinations of expression values of the enzymes catalyzing the reactions in which the couple of metabolites is involved.
 
 ### Install
 ``` 
-devtools::install_github("cds-group/Met2Graph")
+devtools::install_github("cds-group/MetaboliteGraphs")
 ```
 
 ### Cite
