@@ -1,6 +1,6 @@
 #' Load a metabolic model and extract the stoichiometric matrix
 #'
-#' This function loads a model in SBML format and return a stoichiometric matrix.
+#' This function loads a model in SBML format and returns a stoichiometric matrix.
 #'
 #' @param infile Path to the input SBML file
 #' @import sybilSBML
@@ -20,8 +20,8 @@ load_mod <- function(infile){
 
 #' Extract produced and consumed metabolites (met) for each reaction (rxn) of the metabolic model
 #'
-#' This function create the edges list necessary to build the graph of metabolites.
-#' It merge the metabolites produced and consumed by each reaction into a new
+#' This function creates the edges list necessary to build the metabolites graph.
+#' It merges the metabolites produced and consumed by each reaction into a new
 #' dataframe.
 #'
 #' @param infile stoichiometric matrix
