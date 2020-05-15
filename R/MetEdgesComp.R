@@ -36,11 +36,11 @@ load_mod <- function(infile){
 #from stoichiometric matrix extract positive relationships between rxn and met
 edges_list <- function(infile) {
   stoich_df=as.data.frame(infile)
-  indices_pos <- which(t(t(stoich_df) > 0), arr.ind=TRUE)
+  indices_pos <- which(stoich_df > 0, arr.ind=TRUE)
   indices_pos[,"row"] <- rownames(stoich_df)[as.numeric(indices_pos[,"row"])]
   indices_pos[,"col"] <- colnames(stoich_df)[as.numeric(indices_pos[,"col"])]
   #from stoich matrix extract negative rel between rxn and met
-  indices_neg <- which(t(t(stoich_df) < 0), arr.ind=TRUE)
+  indices_neg <- which(stoich_df < 0, arr.ind=TRUE)
   indices_neg[,"col"] <- colnames(stoich_df)[as.numeric(indices_neg[,"col"])]
   indices_neg[,"row"] <- rownames(stoich_df)[as.numeric(indices_neg[,"row"])]
   #merge by reaction name (edge_list)
