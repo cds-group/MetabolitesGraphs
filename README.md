@@ -4,7 +4,7 @@ Code to build graphs integrating gene expression counts and a SBML metabolic mod
 
 ### Install
 ``` 
-devtools::install_github("cds-group/MetaboliteGraphs")
+devtools::install_github("cds-group/MetabolitesGraphs")
 ```
 
 ### Cite
