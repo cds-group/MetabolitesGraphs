@@ -104,7 +104,6 @@ Code to build graphs integrating gene expression counts and a SBML metabolic mod
 devtools::install_github("cds-group/MetabolitesGraphs")
 ```
 
->>>>>>> 1024e35300e30c080ab8806ed0d25fbca2d4c229
 ### Cite
 1. Granata, I., Guarracino, M.R., Kalyagin, V.A., Maddalena, L., Manipur, I. and Pardalos, P.M., 2018, December. Supervised classification of metabolic networks. In 2018 IEEE International Conference on Bioinformatics and Biomedicine (BIBM) (pp. 2688-2693). IEEE.
 https://ieeexplore.ieee.org/abstract/document/8621500
