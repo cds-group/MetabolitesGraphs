@@ -13,8 +13,13 @@ edges_list(infile)
 A dataframe with metabolites edges list
 }
 \description{
+<<<<<<< HEAD
 This function creates the edges list necessary to build the metabolites graph.
 It merges the metabolites produced and consumed by each reaction into a new
+=======
+This function create the edges list necessary to build the graph of metabolites.
+It merge the metabolites produced and consumed by each reaction into a new
+>>>>>>> 1024e35300e30c080ab8806ed0d25fbca2d4c229
 dataframe.
 }
 \examples{

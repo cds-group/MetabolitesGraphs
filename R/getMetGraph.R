@@ -5,12 +5,20 @@
 #' @param input_dir path to input directory containing the samples edge lists
 #' @param output_dir path to output directory
 #' @return graphs in graphml format
+<<<<<<< HEAD
 #' @importFrom igraph graph_from_data_frame write.graph
+=======
+#' @import igraph
+>>>>>>> 1024e35300e30c080ab8806ed0d25fbca2d4c229
 #' @export
 #'
 #' @examples
 #' \dontrun{
+<<<<<<< HEAD
 #' input_dir <- system.file("extdata/edges_list/", package = "MetabolitesGraphs"))
+=======
+#' input_dir <- system.file("extdata/edges_list/", package = "Met2Graph"))
+>>>>>>> 1024e35300e30c080ab8806ed0d25fbca2d4c229
 #' output_dir <- "./"
 #' getMetGraph(input_dir,output_dir)}
 getMetGraph <- function(input_dir, output_dir){
@@ -33,7 +41,11 @@ getMetGraph <- function(input_dir, output_dir){
   inpGraph$weight <- graph_mean_sum[, 1]
   colnames(inpGraph) <- c("V1", "V2", "weight")
 
+<<<<<<< HEAD
   graphMet <- graph_from_data_frame(inpGraph, directed = TRUE)
+=======
+  graphMet <- graph.data.frame(inpGraph, directed = TRUE)
+>>>>>>> 1024e35300e30c080ab8806ed0d25fbca2d4c229
 
   fileNameout <- file.path(output_dir, paste0(i, '.graphml'))
   write.graph(graphMet, fileNameout, "graphml")

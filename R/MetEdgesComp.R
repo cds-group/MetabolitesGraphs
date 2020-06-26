@@ -4,13 +4,20 @@
 #'
 #' @param infile Path to the input SBML file
 #' @import sybilSBML
+<<<<<<< HEAD
 #' @importFrom Hmisc %nin%
+=======
+>>>>>>> 1024e35300e30c080ab8806ed0d25fbca2d4c229
 #' @return A stoichiometric matrix
 #' @export
 #'
 #' @examples
 #' \dontrun{
+<<<<<<< HEAD
 #'stoich_mat <- load_mod(system.file("extdata", "kidney.xml", package = "MetabolitesGraphs"))}
+=======
+#'stoich_mat <- load_mod(system.file("extdata", "kidney.xml", package = "Met2Graph"))}
+>>>>>>> 1024e35300e30c080ab8806ed0d25fbca2d4c229
 load_mod <- function(infile){
   mod <- readSBMLmod(infile, bndCond = FALSE)
   stoich_mat <- as.matrix(mod@S)
@@ -54,8 +61,13 @@ edges_list <- function(infile) {
 #' This function add a new column with enzymes matching the correspondent reaction
 #' @param edges_list dataframe with metabolites edges list
 #' @param rx_gene RXN-GENE dataframe extracted from Homo Sapiens generic GEM
+<<<<<<< HEAD
 #' @importFrom dplyr rename %>%
 #' @importFrom reshape2 melt
+=======
+#' @import reshape2
+#' @import dplyr
+>>>>>>> 1024e35300e30c080ab8806ed0d25fbca2d4c229
 #' @return A dataframe with reactions, metabolites edges, and enzymes
 #' @export
 #' @examples

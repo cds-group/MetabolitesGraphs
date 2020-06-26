@@ -6,14 +6,21 @@
 #' @param extension files extension
 #' @param tag new filename tags
 #' @param output_dir path to output directory
+<<<<<<< HEAD
 #' @importFrom utils data read.table write.table
+=======
+>>>>>>> 1024e35300e30c080ab8806ed0d25fbca2d4c229
 #' @return Sample specific dataframes with reactions, metabolites edges, enzymes and expression values
 #'
 #' @export
 #'
 #' @examples
 #' \dontrun{
+<<<<<<< HEAD
 #' expr_dir <- system.file("extdata/expression/", package = "MetabolitesGraphs"))
+=======
+#' expr_dir <- system.file("extdata/expression/", package = "Met2Graph"))
+>>>>>>> 1024e35300e30c080ab8806ed0d25fbca2d4c229
 #' output_dir <- "./"
 #' integrate_expression(edges_list_no_rec_mets,expr_dir, "txt", "edges-", output_dir)}
 integrate_expression <- function(df, expr_dir, extension, tag, output_dir){

@@ -7,6 +7,7 @@ export(integrate_expression)
 export(load_mod)
 export(remove_mets)
 import(Hmisc)
+<<<<<<< HEAD
 import(sybilSBML)
 importFrom(Hmisc,"%nin%")
 importFrom(dplyr,"%>%")
@@ -17,3 +18,9 @@ importFrom(reshape2,melt)
 importFrom(utils,data)
 importFrom(utils,read.table)
 importFrom(utils,write.table)
+=======
+import(dplyr)
+import(igraph)
+import(reshape2)
+import(sybilSBML)
+>>>>>>> 1024e35300e30c080ab8806ed0d25fbca2d4c229
