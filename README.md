@@ -1,5 +1,4 @@
 # MetabolitesGraphs
-<<<<<<< HEAD
 MetabolitesGraphs contains the codes to integrate gene expression data into a metabolic model and extract metabolites-based graphs. It provides test expression data and kidney model.
 
 The metabolites are connected by reactions and by the relative catalyzing enzymes. Two metabolites are connected if one is a substrate and the other one is a product in one or multiple reactions.
