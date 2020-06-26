@@ -13,17 +13,5 @@ load_mod(infile)
 A stoichiometric matrix
 }
 \description{
-<<<<<<< HEAD
 This function loads a model in SBML format and returns a stoichiometric matrix.
-}
-\examples{
-\dontrun{
-stoich_mat <- load_mod(system.file("extdata", "kidney.xml", package = "MetabolitesGraphs"))}
-=======
-This function loads a model in SBML format and return a stoichiometric matrix.
-}
-\examples{
-\dontrun{
-stoich_mat <- load_mod(system.file("extdata", "kidney.xml", package = "Met2Graph"))}
->>>>>>> 1024e35300e30c080ab8806ed0d25fbca2d4c229
 }

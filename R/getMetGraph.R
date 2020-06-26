@@ -6,13 +6,11 @@
 #' @param output_dir path to output directory
 #' @return graphs in graphml format
 #' @importFrom igraph graph_from_data_frame write.graph
-#' @import igraph
 #' @export
 #'
 #' @examples
 #' \dontrun{
 #' input_dir <- system.file("extdata/edges_list/", package = "MetabolitesGraphs"))
-=======
 #' input_dir <- system.file("extdata/edges_list/", package = "Met2Graph"))
 #' output_dir <- "./"
 #' getMetGraph(input_dir,output_dir)}
@@ -21,7 +19,7 @@ getMetGraph <- function(input_dir, output_dir){
   for (i in fileListKeep){
     fileNamefull <- file.path(input_dir, paste0(i, ".txt"))
     graphRead <- read.csv(fileNamefull, header = TRUE)
-  # Run for finding the mean of same rkns and sum for different rkns----------
+  # Run for finding the mean of same rkns and sum for different rxns----------
     graphRead$met_nodes <- paste(graphRead$met1, graphRead$met2,sep = "_")
     graphRead$HMR_met_nodes <- paste(graphRead$Reaction, graphRead$met_nodes ,sep = "_")
 

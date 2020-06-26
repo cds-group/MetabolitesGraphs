@@ -29,7 +29,6 @@ load_mod <- function(infile){
 #' @param infile stoichiometric matrix
 #' @return A dataframe with metabolites edges list
 #' @export
-#'
 #' @examples
 #' \dontrun{
 #' edges_list <- edges_list(stoich_mat)
@@ -57,8 +56,6 @@ edges_list <- function(infile) {
 #' @param rx_gene RXN-GENE dataframe extracted from Homo Sapiens generic GEM
 #' @importFrom dplyr rename %>%
 #' @importFrom reshape2 melt
-#' @import reshape2
-#' @import dplyr
 #' @return A dataframe with reactions, metabolites edges, and enzymes
 #' @export
 #' @examples
@@ -86,7 +83,7 @@ add_enzymes <- function(edges_list, rxn_gene){
 #'
 #' @param edges_list Metabolites edges dataframe, where metabolites columns are named "met1" and "met2"
 #' @param met_list vector of recurring metabolites ids
-#' @import Hmisc
+#' @importFrom Hmisc %nin%
 #' @return A dataframe with metabolites edges list, without recurring metabolites
 #' @export
 #' @examples

@@ -21,19 +21,12 @@ integrate_expression(df, expr_dir, extension, tag, output_dir)
 Sample specific dataframes with reactions, metabolites edges, enzymes and expression values
 }
 \description{
-<<<<<<< HEAD
 This function creates a new file for each sample containing reactions, connected metabolites, enzymes and expression values
 }
 \examples{
 \dontrun{
 expr_dir <- system.file("extdata/expression/", package = "MetabolitesGraphs"))
-=======
-This function create a new file for each sample containing reactions, metabolites connected, enzymes and expression values
-}
-\examples{
-\dontrun{
 expr_dir <- system.file("extdata/expression/", package = "Met2Graph"))
->>>>>>> 1024e35300e30c080ab8806ed0d25fbca2d4c229
 output_dir <- "./"
 integrate_expression(edges_list_no_rec_mets,expr_dir, "txt", "edges-", output_dir)}
 }

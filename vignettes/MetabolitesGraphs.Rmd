@@ -59,7 +59,7 @@ In R console, type:
 
 ```r
     library(devtools)
-    install_github(repo="MetabolitesGraphs", username="cds-group")
+    install_github("cds-group/MetabolitesGraphs")
 ```
 
 # Getting Started
