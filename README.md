@@ -109,3 +109,4 @@ devtools::install_github("cds-group/MetabolitesGraphs")
 https://ieeexplore.ieee.org/abstract/document/8621500
 2. Granata, I., Guarracino, M.R., Kalyagin, V.A., Maddalena, L., Manipur, I. and Pardalos, P.M., 2020. Model simplification for supervised classification of metabolic networks. Annals of Mathematics and Artificial Intelligence, 88(1), pp.91-104.
 https://link.springer.com/article/10.1007/s10472-019-09640-y
+3. Granata, I., Guarracino, M.R., Maddalena, L. and Manipur, I., 2020, July. Network Distances for Weighted Digraphs. Accepted In 2020 International Conference on Mathematical Optimization Theory and Operations Research (MOTOR).
