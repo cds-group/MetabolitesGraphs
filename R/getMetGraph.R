@@ -7,11 +7,9 @@
 #' @return graphs in graphml format
 #' @importFrom igraph graph_from_data_frame write.graph
 #' @export
-#'
 #' @examples
 #' \dontrun{
-#' input_dir <- system.file("extdata/edges_list/", package = "MetabolitesGraphs"))
-#' input_dir <- system.file("extdata/edges_list/", package = "Met2Graph"))
+#' input_dir <- system.file("extdata/edges_list/", package = "MetabolitesGraphs")
 #' output_dir <- "./"
 #' getMetGraph(input_dir,output_dir)}
 getMetGraph <- function(input_dir, output_dir){
@@ -34,7 +32,6 @@ getMetGraph <- function(input_dir, output_dir){
   inpGraph$weight <- graph_mean_sum[, 1]
   colnames(inpGraph) <- c("V1", "V2", "weight")
   graphMet <- graph_from_data_frame(inpGraph, directed = TRUE)
-  graphMet <- graph.data.frame(inpGraph, directed = TRUE)
 
   fileNameout <- file.path(output_dir, paste0(i, '.graphml'))
   write.graph(graphMet, fileNameout, "graphml")

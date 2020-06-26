@@ -13,8 +13,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' expr_dir <- system.file("extdata/expression/", package = "MetabolitesGraphs"))
-#' expr_dir <- system.file("extdata/expression/", package = "Met2Graph"))
+#' expr_dir <- system.file("extdata/expression/", package = "MetabolitesGraphs")
 #' output_dir <- "./"
 #' integrate_expression(edges_list_no_rec_mets,expr_dir, "txt", "edges-", output_dir)}
 integrate_expression <- function(df, expr_dir, extension, tag, output_dir){

@@ -7,11 +7,9 @@
 #' @importFrom Hmisc %nin%
 #' @return A stoichiometric matrix
 #' @export
-#'
 #' @examples
 #' \dontrun{
 #'stoich_mat <- load_mod(system.file("extdata", "kidney.xml", package = "MetabolitesGraphs"))}
-#'stoich_mat <- load_mod(system.file("extdata", "kidney.xml", package = "Met2Graph"))}
 load_mod <- function(infile){
   mod <- readSBMLmod(infile, bndCond = FALSE)
   stoich_mat <- as.matrix(mod@S)

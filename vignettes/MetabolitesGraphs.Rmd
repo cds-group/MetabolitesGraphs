@@ -98,7 +98,7 @@ edges_list_no_rec_mets <- remove_mets(edges_list_w_enzymes, curr_met)
 Expression values are associated to enzymes catalyzing each reaction for each sample
 
 ```{r, echo=TRUE, eval=FALSE}
-expr_dir <- system.file("extdata/expression/", package = "MetabolitesGraphs"))
+expr_dir <- system.file("extdata/expression/", package = "MetabolitesGraphs")
 output_dir <- "./"
 integrate_expression(edges_list_no_rec_mets,expr_dir, "txt", "edges-", output_dir)
 ```
@@ -106,7 +106,7 @@ integrate_expression(edges_list_no_rec_mets,expr_dir, "txt", "edges-", output_di
 Transform the edges list of each sample in graphml format graphs
 
 ```{r, echo=TRUE, eval=FALSE}
-input_dir <- system.file("extdata/edges_list/", package = "MetabolitesGraphs"))
+input_dir <- system.file("extdata/edges_list/", package = "MetabolitesGraphs")
 output_dir <- "./"
 getMetGraph(input_dir,output_dir)
 ```

@@ -20,8 +20,8 @@ It simplifies the multiedges in single ones by taking the mean of enzyme catalyz
 }
 \examples{
 \dontrun{
-input_dir <- system.file("extdata/edges_list/", package = "MetabolitesGraphs"))
-input_dir <- system.file("extdata/edges_list/", package = "Met2Graph"))
+input_dir <- system.file("extdata/edges_list/", package = "MetabolitesGraphs")
+input_dir <- system.file("extdata/edges_list/", package = "Met2Graph")
 output_dir <- "./"
 getMetGraph(input_dir,output_dir)}
 }
