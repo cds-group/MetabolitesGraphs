@@ -15,18 +15,12 @@ RoxygenNote: 7.1.0
 Imports: 
     reshape2,
     dplyr,
-<<<<<<< HEAD
     igraph,
-=======
->>>>>>> 1024e35300e30c080ab8806ed0d25fbca2d4c229
     Hmisc,
     sybilSBML,
     stringr,
     stringi
-<<<<<<< HEAD
 Suggests: 
     knitr,
     rmarkdown
 VignetteBuilder: knitr
-=======
->>>>>>> 1024e35300e30c080ab8806ed0d25fbca2d4c229
