@@ -15,3 +15,7 @@ A stoichiometric matrix
 \description{
 This function loads a model in SBML format and returns a stoichiometric matrix.
 }
+\examples{
+\dontrun{
+stoich_mat <- load_mod(system.file("extdata", "kidney.xml", package = "MetabolitesGraphs"))}
+}

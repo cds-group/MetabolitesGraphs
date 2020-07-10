@@ -5,8 +5,6 @@ The metabolites are connected by reactions and by the relative catalyzing enzyme
 
 The gene-protein-reaction associations are needed. The relative file, containing the reaction and the gene ids associated. By default, the one from the human generic GEM is used.
 
-If the parameter catalyzed is TRUE, only reactions with associated enzymes are kept.
-
 Each edge represented by the enzymes catalyzing the reactions is weighted by their expression values.
 
 Multiple edges, corresponding to the multiple enzymes connecting the two metabolites, are simplified to single edges:
@@ -82,7 +80,7 @@ Expression values are associated to enzymes catalyzing each reaction for each sa
 
 ```{r, echo=TRUE, eval=FALSE}
 expr_dir <- system.file("extdata/expression/", package = "MetabolitesGraphs")
-output_dir <- "./"
+output_dir <- "/path/to/ouput/"
 integrate_expression(edges_list_no_rec_mets,expr_dir, "txt", "edges-", output_dir)
 ```
 
@@ -90,7 +88,7 @@ Transform the edges list of each sample in graphml format graphs
 
 ```{r, echo=TRUE, eval=FALSE}
 input_dir <- system.file("extdata/edges_list/", package = "MetabolitesGraphs")
-output_dir <- "./"
+output_dir <- "/path/to/ouput/"
 getMetGraph(input_dir,output_dir)
 ```
 

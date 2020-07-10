@@ -14,7 +14,7 @@
 #' @examples
 #' \dontrun{
 #' expr_dir <- system.file("extdata/expression/", package = "MetabolitesGraphs")
-#' output_dir <- "./"
+#' output_dir <- "/path/to/ouput/"
 #' integrate_expression(edges_list_no_rec_mets,expr_dir, "txt", "edges-", output_dir)}
 integrate_expression <- function(df, expr_dir, extension, tag, output_dir){
     if(missing(expr_dir)) {
@@ -50,7 +50,8 @@ integrate_expression <- function(df, expr_dir, extension, tag, output_dir){
 
     colnames(sample)[1]="gene"
     colnames(sample)[2]="v1"
-
+    sample=sample %>%
+      separate(gene, c("gene", "version"), "\\.")
     df$expr= sample$v1[match(df$Enzyme,sample$gene)]
     f4=df[!(is.na(df$expr) | df$expr=="NA"), ]
     # write old data to new files:

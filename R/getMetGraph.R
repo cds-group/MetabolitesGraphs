@@ -10,7 +10,7 @@
 #' @examples
 #' \dontrun{
 #' input_dir <- system.file("extdata/edges_list/", package = "MetabolitesGraphs")
-#' output_dir <- "./"
+#' output_dir <- "/path/to/ouput/"
 #' getMetGraph(input_dir,output_dir)}
 getMetGraph <- function(input_dir, output_dir){
   fileListKeep <- gsub('.txt', '', list.files(input_dir))

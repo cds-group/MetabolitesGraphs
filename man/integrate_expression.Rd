@@ -26,7 +26,6 @@ This function creates a new file for each sample containing reactions, connected
 \examples{
 \dontrun{
 expr_dir <- system.file("extdata/expression/", package = "MetabolitesGraphs")
-expr_dir <- system.file("extdata/expression/", package = "Met2Graph")
-output_dir <- "./"
+output_dir <- "/path/to/ouput/"
 integrate_expression(edges_list_no_rec_mets,expr_dir, "txt", "edges-", output_dir)}
 }

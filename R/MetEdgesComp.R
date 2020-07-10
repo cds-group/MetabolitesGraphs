@@ -64,6 +64,7 @@ add_enzymes <- function(edges_list, rxn_gene){
   f1=merge(edges_list,rxn_gene,by.x="col",by.y="V1")
   f2=melt(f1, id.vars=c("col", "row.x", "row.y"))
   f3=f2[!(is.na(f2$value) | f2$value==""), ]
+  f3=f3[,-which(names(f3) %in% c("variable"))]
   f3=f3 %>%
     rename(
       Reaction = col,

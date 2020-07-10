@@ -1,14 +1,13 @@
 Package: MetabolitesGraphs
-Title: What the Package Does (One Line, Title Case)
+Title: Extract metabolites-based graphs from metabolic model and gene expression data
 Version: 0.0.0.9000
 Authors@R: 
-    person(given = "First",
-           family = "Last",
+    person(given = "Ilaria",
+           family = "Granata",
            role = c("aut", "cre"),
-           email = "first.last@example.com",
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: What license it uses
+           email = "ilaria.granata@icar.cnr.it",
+           comment = c(ORCID = "0000-0002-3450-4667"))
+Description: MetabolitesGraphs contains the codes to integrate gene expression data into a metabolic model and extract metabolites-based graphs. The metabolites are connected by reactions and by the relative catalyzing enzymes. Two metabolites are connected if one is a substrate and the other one is a product in one or multiple reactions. The gene-protein-reaction associations are needed. The relative file, containing the reaction and the gene ids associated. By default, the one from the human generic GEM is used. Each edge represented by the enzymes catalyzing the reactions is weighted by their expression values.
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.0
