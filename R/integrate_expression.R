@@ -7,6 +7,7 @@
 #' @param tag new filename tags
 #' @param output_dir path to output directory
 #' @importFrom utils data read.table write.table
+#' @importFrom tidyr separate
 #' @return Sample specific dataframes with reactions, metabolites edges, enzymes and expression values
 #'
 #' @export
