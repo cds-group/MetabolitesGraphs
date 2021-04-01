@@ -10,7 +10,7 @@ Authors@R:
 Description: MetabolitesGraphs contains the codes to integrate gene expression data into a metabolic model and extract metabolites-based graphs. The metabolites are connected by reactions and by the relative catalyzing enzymes. Two metabolites are connected if one is a substrate and the other one is a product in one or multiple reactions. The gene-protein-reaction associations are needed. The relative file, containing the reaction and the gene ids associated. By default, the one from the human generic GEM is used. Each edge represented by the enzymes catalyzing the reactions is weighted by their expression values.
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 Imports: 
     reshape2,
     dplyr,
